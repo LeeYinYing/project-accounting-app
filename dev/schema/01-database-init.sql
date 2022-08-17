@@ -233,6 +233,7 @@ CREATE TABLE IF NOT EXISTS harmony_accounting.member_services(
   service_id INT NOT NULL,
   hour FLOAT NOT NULL,
   date DATE,
+  note TEXT,
   FOREIGN KEY (member_id) REFERENCES harmony_accounting.members(id),
   FOREIGN KEY (service_id) REFERENCES harmony_accounting.services(id)
 );
